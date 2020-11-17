@@ -1,0 +1,670 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+.header{
+    background-color: rgb(28, 122, 211);
+    color: #fff;
+    height: 50px;
+    padding-left: 50px;
+    display: flex;
+}
+
+.header > .header-logo{
+    line-height: 50px;
+}
+
+
+
+
+
+
+
+
+
+/*
+| -----------------------
+|  USER SEARCH
+| -----------------------
+*/
+
+.header > .user-search{
+    padding: 0px 10px;
+    width: 100%;
+    line-height: 50px;
+}
+
+.user-search .user-search-field{
+    height: 30px;
+    border: 1px solid black;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+    padding: 0px 8px;
+    font-size: 18px;
+    width: 200px;
+}
+
+.user-search .user-search-button{
+    height: 30px;
+    width: 50px;
+    border: 1px solid black;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+    margin-left: -5px;
+    background-color: #fff;
+    position: relative;
+    top: -1px;
+}
+
+
+
+
+
+
+/*
+| -----------------------
+|  HEADER CONTROLS
+| -----------------------
+*/
+
+.header > .header-controls{
+    padding: 0px 5px;
+    line-height: 50px;
+    color: #000;
+}
+
+.header > .header-controls > ul{
+    list-style: none;
+    display: flex;
+}
+
+.header > .header-controls > ul > li{
+    margin: 0px 2px;
+}
+
+.header > .header-controls > ul > li > button{
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: rgb(28, 122, 211);
+    color: #fff;
+    font-size: 18px;
+}
+
+.header-tab{
+    background-color: rgb(28, 122, 211);
+    position: absolute;
+    line-height: 25px;
+    list-style: none;
+    width: 200px;
+    color: #fff;  
+    border: 2px solid rgb(21, 96, 167);
+    border-top: none;
+    border-radius: 0px 0px 5px 5px;
+    display: none;
+}
+
+.header-tab-control{
+    right: 80px;
+}
+
+.header-tab-notifications{
+    right: 40px;
+}
+
+.header-tab-messages{
+    right: 0px;
+}
+
+.header-tab > li{
+    margin-bottom: 2px;
+    padding: 8px 15px;
+    text-align: right;
+}
+
+.header-tab > li:hover{
+    background-color: rgb(31, 98, 161);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.header-tab > li > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.main > .user-control{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(80, 80, 80);
+    background-color: rgba(230, 230, 230, 0.822);
+    border-radius: 4px;
+}
+
+.main > .user-control > ul{
+    list-style: none;
+}
+
+.main > .user-control > ul > li > a{
+    text-decoration: none;
+    background-color: rgba(207, 207, 207, 0.911);
+    width: 100%;
+    display: block;
+    color: rgb(80, 80, 80);
+    margin-bottom: 3px;
+    padding: 20px;
+
+}
+
+.main > .user-control > ul > li > a:hover{
+    background-color: rgba(177, 177, 177, 0.911);
+    color: rgb(80, 80, 80);
+    transition: .4s;
+}
+
+.main > .post-area{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+@media(min-width: 900px){
+
+    .main > .user-control{
+        width: 300px;
+        height: 300px;
+    }
+
+    .main > .post-area{
+        max-width: 560px;
+    }
+}
+
+.main > .post-area > .create-post{
+    margin-bottom: 10px;
+}
+
+.main > .post-area > .create-post textarea{
+    width: 100%;
+    border: 2px solid rgb(28, 122, 211);
+    padding: 10px;
+    font-size: 18px;
+    resize: none;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    border-bottom: none;
+    border-radius: 4px 4px 0px 0px;
+}
+
+.main > .post-area > .create-post .post-attachment{
+    border: 2px solid rgb(28, 122, 211);
+    border-bottom: none;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: -1px;
+}
+
+.main > .post-area > .create-post .post-button{
+    background-color: rgb(28, 122, 211);
+    border: none;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    margin-top: -1px;
+    font-size: 20px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+| -----------------------
+|  POST STYLING
+| -----------------------
+|
+|
+*/
+
+.main > .post-area > .post {
+    margin-bottom: 10px;
+    border: .2px solid rgb(28, 122, 211);
+    border-radius: 4px;
+}
+
+.main > .post-area > .post > .post-header{
+    padding: 18px 12px;
+    font-size: 15px;
+    color: rgb(28, 122, 211);;
+    font-weight: bold;
+    display: flex;
+}
+
+.main > .post-area > .post > .post-header > .header-profile-img img{
+    height: 40px;
+    margin-right: 6px;
+    border-radius: 50%;
+}
+
+.main > .post-area > .post > .post-header > .header-profile-name{
+    line-height: 40px;
+}
+
+.main > .post-area > .post > img.post-attachment{
+    width: 100%;
+    margin-bottom: -4px;
+}
+
+.main > .post-area > .post > .post-body{
+    padding: 15px 5px 5px 5px;
+    font-size: 15px;
+}
+
+.post > .post-comments{
+    padding: 8px;
+    display: flex;
+}
+
+.post > .post-comments img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.post > .post-comments  .comment-field{
+    height: 30px;
+    border: none;
+    border-radius: 100px;
+    width: 85%;
+    background-color: rgb(236, 236, 236);
+    padding: 0px 10px;
+    color: rgb(58, 58, 58);
+    margin: 0px 5px;
+}
+
+.post > .post-comments button{
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    color: #fff;
+    background-color: rgb(28, 122, 211);
+    display: inline;
+}
+
+.post > .comment-area{
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.post > .comment-area img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0px 10px;
+}
+
+.post > .comment-area > .comment{
+    margin-bottom: 2px;
+    display: flex;
+}
+
+.post > .comment-area > .comment  a{
+    color: rgb(28, 122, 211);
+    text-decoration: none;
+}
+
+
+
+
+.post > .post-like button{
+    height: 50px;
+    width: 50px;
+    border: none;
+    background-color: #fff;
+    color: rgb(153, 153, 153);
+    font-size: 25px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 50%;
+}
+
+.post > .post-like button:hover{
+    color: #fff;
+    background-color: rgb(28, 122, 211);
+}
+
+.post > .post-like button.liked{
+    color: #fff;
+    background-color: rgb(28, 122, 211);
+}
+
+.post > .post-like button.liked:hover{
+    color: rgb(153, 153, 153);
+    background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+| -----------------------
+|  FRIEND LIST STYLING
+| -----------------------
+|
+|
+*/
+
+.friends-list{
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    background-color: rgba(226, 226, 226, 0.938);
+}
+
+.friends-list > .friends-list-header{
+    color: #fff;
+    background-color: rgba(68, 68, 68, 0.438);
+    font-size: 25px;
+    padding: 10px 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.friends-list > ul{
+    list-style: none;
+}
+
+.friends-list > ul > li{
+    padding: 0px 15px;
+    display: flex;
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.friends-list > ul > li img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+.friends-list > ul > li a{
+    height: 50px;
+    color: rgb(28, 122, 211);
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.friends-list > ul > li > .online-status{
+    background-color: red;
+    height: 10px;
+    width: 0px;
+    margin: 18px 0px 0px 20px;
+    border-radius: 50%;
+}
+
+.friends-list > ul > li > .online-status.online-green{
+    background-color: green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+| -----------------------
+|  PANEL STYLING
+| -----------------------
+|
+|
+*/
+
+.panel {
+    margin-bottom: 10px;
+    border: .2px solid rgb(28, 122, 211);
+    border-radius: 4px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.panel > .panel-header{
+    padding: 18px 12px;
+    font-size: 15px;
+    background-color: rgb(28, 122, 211);
+    color: #fff;
+    font-weight: bold;
+}
+
+.panel > .panel-body{
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+| -----------------------
+|  GENERAL FORM STYLING
+| -----------------------
+| 
+|
+*/
+
+.inp-fld{
+    width: 90%;
+    height: 43px;
+    border: 2px solid rgb(28, 122, 211);
+    padding: 3px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.inp-txt{
+    width: 90%;
+    height: 200px;
+    border: 2px solid rgb(28, 122, 211);
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.fld-lbl{
+    color:  rgb(28, 122, 211);
+    font-weight: bold;
+    font-size: 18px;
+    margin:0px 0px 5px 2px;
+    display: block;
+}
+
+.btn-blu{
+    color: #fff;
+    background-color: rgb(28, 122, 211);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+| -----------------------
+|  MESSAGE PAGE STYLING
+| -----------------------
+| 
+|
+*/
+
+.message-area{
+    border: 2px solid rgb(28, 122, 211);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.message-area > .send-message{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.message-area > .send-message > .message-field{
+    height: 30px;
+    border: none;
+    border-radius: 100px;
+    width: 100%;
+    background-color: rgb(236, 236, 236);
+    padding: 0px 10px;
+    color: rgb(58, 58, 58);
+    margin: 0px 5px;
+}
+
+.message-area > .send-message > .message-button{
+    height: 30px;
+    border: none;
+    color: #fff;
+    background-color: rgb(28, 122, 211);
+    display: inline;
+    padding: 0px 5px;
+    border-radius: 50px;
+}
+
+.message-area > .display-chat{
+    background-color: orange;
+    padding: 15px 10px;
+    background-color: rgba(230, 230, 230, 0.89);
+    border-radius: 10px;
+    max-height: 500px;
+    min-height: 200px;
+    overflow: scroll;
+}
+
+.message-area > .display-chat > .m-me{
+    text-align: right;
+    padding: 0px 5px;
+}
+
+.message-area > .display-chat > .m-me > .message{
+    background-color: rgb(32, 133, 228);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    color: rgba(245, 245, 245, 0.918);
+    margin-bottom: 5px;
+}
+
+.message-area > .display-chat > .m-f{
+    text-align: left;
+    padding: 0px 5px;
+}
+
+.message-area > .display-chat > .m-f > .message{
+    background-color: rgba(211, 211, 211, 0.801);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    color: rgba(36, 36, 36, 0.918);
+    margin-bottom: 5px;
+}
